@@ -7,25 +7,420 @@
     margin: 0 auto;
     /* выше для экранов больше 1600px отцентрировали весь контент */
     font-family: 'Helvetica Neue', Arial, sans-serif;
-}
+    background-color:#f2f2f2;
+  }
+
+
+/* Классы обнуления для семантики и ссылок */
+
+a:active, a, a:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    h1, p, h2, h3{
+    font-size: inherit;
+    padding: 0;
+    margin: 0;
+    font-weight: inherit;
+    }
+
+/* ------------------------------------ */
+
+
+  /* div {
+
+        border: 1px solid green;
+  } */
+
 
 .header {
+    position: relative;
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
-    /* выше установили ограничения для секции */
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+
+.logo {
+  background-image:url(../images/logo_grey.svg);
+  alt: "УПС! Картинка не найдена!";
+  width: 185px;
+  height: 35px;
+}
+
+
+
+.logo__place_header {
+  background-repeat: no-repeat;
+   position: absolute;
+   top: 30px;
+   left: 64px;
+   z-index:2;
+}
+
+
+.header__title {
+  margin-left: 64px;
+  height:100%;
+  width:50%;
+  display:flex;
+
+  align-items: center;
+            line-height: 96px;
+          font-size:   102px;
+          font-weight: 600;
+  z-index:3;
+}
+
+
+.header__subtitle {
+  position: absolute;
+  width:388px;
+  bottom: 30px;
+  left: 64px;
+    line-height: 25px;
+    font-size:   18px;
+    font-weight: 400;
+    z-index:2;
+}
+
+
+
+
 .header__square-pic {
-    height: 568px;
-    width: 568px;
+  position: absolute;
+  min-height: 568px;
+  min-width: 568px;
+  background-color:#2F80ED;
+  top: 64px;
+  right: 0px;
+  z-index:0;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-    width: 200px;
-    color: white;
-    margin-right: 0;
-    margin-top: 80px;
+.header__main-illustration {
+  position:absolute;
+  min-width: 765px;
+  min-height: 608px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/two_again.png);
+  alt: "УПС! Картинка не найдена!";
+  bottom:0;
+  right:0;
+  z-index:1;
+}
+
+
+.header__link {
+    color:#2F80ED;
+}
+
+
+
+
+
+.description {
+    margin-top:100px;
+    display:flex;
+    justify-content: center;
+    min-height: 300px;
+
+}
+
+.two-columns {
+  min-width:784px;
+  display:flex;
+  width:80%;
+  min-height:360px;
+  justify-content:space-between;
+}
+
+.two-columns__brief {
+  width: 175px;
+          color:#2f80ed;
+          line-height: 1.2;
+          font-size:   18px;
+          font-weight: 500;
+}
+
+
+
+
+.two-columns__main-text {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:80%;
+
+}
+
+.two-colums__paragraph {
+  line-height: 34px;
+  font-size:   24px;
+  font-weight: 400;
+}
+
+.two-colums__span-accent {
+  font-weight: 600;
+}
+
+
+
+
+.digits{
+  padding-top:100px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.section-title{
+  line-height: 69px;
+  font-size:   60px;
+  font-weight: 600;
+}
+
+
+  .section-subtitle{
+    line-height: 34px;
+    font-size:   24px;
+    font-weight: 400;
+  margin-top: 20px;
+  }
+
+  .table{
+    width:1100px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+
+  }
+
+    .table__cell{
+      margin-top: 60px;
+      width: 250px;
+    }
+
+      .table__heading{
+        margin-bottom: 20px;
+        line-height: 1.15;
+        font-size:   24px;
+        font-weight: 600;
+      }
+
+    .table__text{
+      line-height: 1.2;
+      font-size:   18px;
+      font-weight: 400;
+      }
+
+    .table__text_author{
+      margin-top:20px;
+      }
+
+
+
+
+      .feinman{
+           background-image:url(../images/feinman.png);
+            alt: "УПС! Картинка не найдена!";
+           background-size: 867px 637px;
+           background-position: left bottom;
+           background-repeat: no-repeat;
+         height:790px;
+         display:flex;
+         flex-direction:column;
+         align-items:center;
+         position: relative;
+         padding-top:100px;
+      }
+
+
+      .feinman__title{
+        text-align:center;
+        line-height: 1.15;
+        font-size:   120px;
+        font-weight: 600;
+          width:648px;
+      }
+      .feinman__subtitle{
+        line-height: 1.15;
+        font-size:   36px;
+        font-weight: 400;
+          margin-top: 70px;
+      }
+
+  .feinman__link{
+    line-height: 51px;
+    font-size:   36px;
+    font-weight: 400;
+    position:absolute;
+    margin:auto;
+    right: 48px;
+    top:calc(890px/2);
+  }
+
+
+
+
+
+
+.kaufman{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position: relative;
+    color:white;
+    background-color: #1f1f1f;
+    padding-bottom: 90px;
+    overflow: hidden;
+
+}
+
+    .kaufman__triangle{
+      background-image:url(../images/triangle.svg);
+      alt: "УПС! Картинка не найдена!";
+      position: absolute;
+      background-size: cover;
+      width: 877px;
+      height: 877px;
+      right:-210px;
+      z-index: 1;
+    }
+
+    .section-title_theme_dark{
+      text-align: center;
+      margin-top: 90px;
+      line-height: 69px;
+      font-size:  60px;
+      font-weight: 600;
+      width:60%;
+    }
+
+    .section-subtitle_theme_dark{
+      text-align: center;
+      line-height: 34px;
+      font-size:  24px;
+      font-weight: 400;
+    margin-top: 20px;
+    width:60%;
+    }
+
+    .table_theme_dark{
+      width:1100px;
+      display:flex;
+      flex-direction:row;
+      flex-wrap:wrap;
+      justify-content
+      : space-between;
+      z-index: 2;
+
+    }
+
+      .table__cell_theme_dark{
+        width: 200px;
+        margin-right: 0;
+        margin-top: 80px;
+      }
+
+        .table__heading_theme_dark{
+          line-height: 1.15;
+          font-size:  24px;
+          font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+      .table__text_theme_dark{
+        line-height: 1.2;
+        font-size:  18px;
+        font-weight: 400;
+      }
+
+
+
+
+
+
+
+
+.footer {
+min-height: 250px;
+display:flex;
+padding-top: 60px;
+padding-bottom: 40px;
+color:white;
+background-color: #1f1f1f;
+flex-basis:711;
+justify-content: center;
+  }
+
+.footer__columns{
+width:90%;
+display:flex;
+flex-direction:row;
+justify-content: space-between;
+}
+
+.footer__column_copyright{
+display:flex;
+width: 50%;
+
+flex-direction:column;
+justify-content: space-between;
+}
+
+
+.logo__place_footer{
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+  .footer__author{
+      line-height: 25px;
+      font-size:18px;
+      font-weight: 400;
+
+
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+
+
+.footer__column_info{
+  display: inline-block;
+}
+
+.footer__column_social{
+display: inline-block;
+}
+
+
+.footer__column-heading{
+  line-height: 30px;
+  font-size:  18px;
+  font-weight: 600;
+}
+
+.footer__column-links{
+  line-height: 30px;
+  font-size:  18px;
+  font-weight: 400;
+
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+
+
+
+.footer__social-icon{
+width:16px;
+height:16px;
+margin-right:10px;
 }
