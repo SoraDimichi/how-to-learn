@@ -14,21 +14,23 @@
 /* Классы обнуления для семантики и ссылок */
 
 a:active, a, a:hover {
+
       text-decoration: none;
       color: inherit;
     }
 
-    h1, p, h2, h3{
+    h1, p, h2, h3, h4{
     font-size: inherit;
     padding: 0;
     margin: 0;
     font-weight: inherit;
+
     }
 
 /* ------------------------------------ */
 
 
-  /* div {
+  /* div,p,h1,h2,h3,h4 {
 
         border: 1px solid green;
   } */
@@ -321,7 +323,6 @@ a:active, a, a:hover {
 
       .table__cell_theme_dark{
         width: 200px;
-        margin-right: 0;
         margin-top: 80px;
       }
 
@@ -329,7 +330,7 @@ a:active, a, a:hover {
           line-height: 1.15;
           font-size:  24px;
           font-weight: 600;
-            margin-bottom: 20px;
+          margin-bottom: 20px;
         }
 
       .table__text_theme_dark{
