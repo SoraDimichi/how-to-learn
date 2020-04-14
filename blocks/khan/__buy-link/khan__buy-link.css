@@ -8,10 +8,6 @@ background-color: transparent;
 text-decoration: none;
 }
 
-.khan__buy-link:active {
-text-decoration: none;
-}
-
 .khan__buy-link:hover {
 text-decoration: none;
 opacity: 0.75;

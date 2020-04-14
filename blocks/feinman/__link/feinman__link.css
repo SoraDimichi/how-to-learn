@@ -11,10 +11,6 @@
   text-decoration: none;
 }
 
-.feinman__link:active {
-  text-decoration: none;
-}
-
 .feinman__link:hover {
   text-decoration: none;
   opacity: 0.75;
