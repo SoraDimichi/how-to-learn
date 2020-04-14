@@ -1,0 +1,15 @@
+.footer__column-link {
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+}
+
+.footer__column-link:active {
+  text-decoration: none;
+}
+
+.footer__column-link:hover {
+  text-decoration: none;
+  opacity: 0.75;
+  transition: opacity 0.3s ease;
+}

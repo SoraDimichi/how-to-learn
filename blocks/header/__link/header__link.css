@@ -1,0 +1,16 @@
+.header__link {
+  background-color: transparent;
+  color: #2f80ed;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.header__link:active {
+  text-decoration: none;
+}
+
+.header__link:hover {
+  text-decoration: none;
+  opacity: 0.75;
+  transition: opacity 0.3s ease;
+}

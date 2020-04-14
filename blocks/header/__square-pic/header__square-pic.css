@@ -1,0 +1,11 @@
+.header__square-pic {
+  position: absolute;
+  min-height: 568px;
+  min-width: 568px;
+  color: inherit;
+  background-color: #2f80ed;
+  top: 64px;
+  right: 0px;
+  z-index: 0;
+  transform: rotate(15deg);
+}

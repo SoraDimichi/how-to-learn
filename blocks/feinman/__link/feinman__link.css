@@ -1,0 +1,22 @@
+.feinman__link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: 400;
+  position: absolute;
+  margin: auto;
+  right: 48px;
+  top: calc(890px/2);
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.feinman__link:active {
+  text-decoration: none;
+}
+
+.feinman__link:hover {
+  text-decoration: none;
+  opacity: 0.75;
+  transition: opacity 0.3s ease;
+}

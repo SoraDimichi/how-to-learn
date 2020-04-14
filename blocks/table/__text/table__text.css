@@ -1,0 +1,15 @@
+.table__text {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.table__text p:nth-child(n) {
+  margin: 0;
+}
+
+.table__text p:nth-child(2) {
+  margin-top: 20px;
+}

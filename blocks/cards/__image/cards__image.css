@@ -1,0 +1,8 @@
+.cards__image {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
